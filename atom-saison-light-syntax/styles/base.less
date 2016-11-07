@@ -1,0 +1,157 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+        font-weight: bold;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @blu2;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
+  border: 1px solid @syntax-result-marker-color-selected;
+}
+
+.comment
+{
+  color: @base2;
+}
+
+.punctuation,
+.keyword.operator
+{
+  color: @base2;
+}
+
+.entity.name.type,
+.meta.function .entity.name.function,
+.meta.definition.global .entity.global,
+.variable.constant,
+.markup.bold,
+.markup.heading-1,
+.markup.heading-2,
+{
+  font-weight: bold;
+}
+
+.markup.italic,
+.comment
+{
+  font-style: italic;
+}
+
+.keyword.control,
+.keyword.special-method,
+.storage.type.function,
+.storage.control,
+.markup.heading,
+{
+  background-color: @pur0;
+}
+
+.storage.type,
+.storage.modifier,
+.markup.raw,
+.markup.code,
+{
+  background-color: @yel0;
+}
+
+.constant.keyword,
+.constant.symbol,
+.constant.definition,
+.link
+{
+  background-color: @blu0;
+
+  .punctuation
+  {
+    color: inherit;
+  }
+}
+
+.constant.numeric,
+.constant.language,
+{
+  background-color: @cya0;
+}
+
+.string.quoted,
+.string.regexp,
+{
+  background-color: @grn0;
+
+  .embedded .punctuation,
+  {
+    color: @base2;
+  }
+
+  .embedded .source,
+  .embedded.source,
+  {
+    color: @syntax-text-color;
+  }
+}
+
+
+.invalid.illegal,
+{
+  background-color: @red0 !important;
+}
+
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
+  padding-left: 1px;
+}
