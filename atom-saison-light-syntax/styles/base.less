@@ -67,6 +67,7 @@ atom-text-editor .search-results .marker.current-result .region,
 .comment
 {
   color: @base2;
+  font-style: italic;
 }
 
 .punctuation,
@@ -87,7 +88,6 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .markup.italic,
-.comment
 {
   font-style: italic;
 }
@@ -148,6 +148,9 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .invalid.illegal,
 {
+  background-color: @red1 !important;
+}
+.invalid.deprecated {
   background-color: @red0 !important;
 }
 
