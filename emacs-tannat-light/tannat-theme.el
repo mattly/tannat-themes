@@ -98,6 +98,24 @@
    `(company-tooltip-common-selection ((,class (:background ,base0))))
    `(company-tooltip-selection ((,class (:background ,base0))))
 
+   ;; Git Gutter
+   `(git-gutter-fr+-added ((,class (:background ,grn0 :foreground ,base1))))
+   `(git-gutter+-added ((,class (:background ,grn0))))
+   `(git-gutter:added ((,class (:background ,grn0))))
+   `(git-gutter-fr+-deleted ((,class (:background ,red0 :foreground ,base1))))
+   `(git-gutter+-deleted ((,class (:background ,red0))))
+   `(git-gutter:deleted ((,class (:background ,red0))))
+   `(git-gutter-fr+-modified ((,class (:background ,cya0 :foreground ,base1))))
+   `(git-gutter+-modified ((,class (:background ,cya0))))
+   `(git-gutter:modified ((,class (:background ,cya0))))
+
+   ;; Magit
+   `(magit-diff-added ((,class (:background ,grn0 :foreground ,base5))))
+   `(magit-diff-added-highlight ((,class (:background ,grn2 :foreground ,base0))))
+
+   `(magit-popup-key ((,class (:background ,base1 :foreground ,blu2))))
+   `(magit-popup-option-value ((,class (:background ,base1 :foreground ,grn2))))
+
    ;; Modeline
    `(mode-line ((,class (:background ,base0))))
    `(mode-line-highlight ((,class (:box nil))))
