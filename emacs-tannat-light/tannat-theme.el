@@ -64,8 +64,10 @@
    `(button ((,class (:foreground ,base5 :underline nil))))
    `(vertical-border ((,class (:background ,base1 :foreground ,base2))))
    `(fringe ((,class (:background ,base1))))
-   `(highlight ((,class (:background nil :underline t))))
-   `(hl-line ((,class (:background nil :underline t))))
+   `(highlight ((,class (:background nil :underline nil))))
+   `(hl-line ((,class (:background nil :underline nil))))
+   `(linum ((,class (:foreground ,base3))))
+   `(linum-highlight-face ((,class (:background ,base1 :foreground ,base5 :weight bold))))
 
    ;; ahs
    `(ahs-definition-face ((,class (:background ,base1 :foreground ,base5))))
@@ -98,6 +100,17 @@
    `(company-tooltip-common-selection ((,class (:background ,base0))))
    `(company-tooltip-selection ((,class (:background ,base0))))
 
+   ;; Rainbow Delimiters
+   `(rainbow-delimiters-depth-1-face ((,class (:foreground ,pur2))))
+   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,red2))))
+   `(rainbow-delimiters-depth-3-face ((,class (:foreground ,yel2))))
+   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,grn2))))
+   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,cya2))))
+   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,blu2))))
+   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,pur1))))
+   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,red1))))
+   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,yel1))))
+
    ;; Git Gutter
    `(git-gutter-fr+-added ((,class (:background ,grn0 :foreground ,base1))))
    `(git-gutter+-added ((,class (:background ,grn0))))
@@ -117,23 +130,23 @@
    `(magit-popup-option-value ((,class (:background ,base1 :foreground ,grn2))))
 
    ;; Modeline
-   `(mode-line ((,class (:background ,base0))))
+   `(mode-line ((,class (:background ,pur2 :foreground ,base1))))
    `(mode-line-highlight ((,class (:box nil))))
-   `(mode-line-inactive ((,class (:background ,base5 :foreground ,base1))))
+   `(mode-line-inactive ((,class (:background ,base2 :foreground ,base3))))
    ;; Powerline
-   `(powerline-active1 ((,class (:background ,base2))))
-   `(powerline-active2 ((,class (:background ,yel0))))
-   `(powerline-inactive1 ((,class (:background ,base4 :foreground ,base2))))
-   `(powerline-inactive2 ((,class (:background ,base3 :foreground ,base2))))
+   `(powerline-active1 ((,class (:background ,red2))))
+   `(powerline-active2 ((,class (:background ,blu2))))
+   `(powerline-inactive1 ((,class (:background ,base2 :foreground ,base3))))
+   `(powerline-inactive2 ((,class (:background ,base2 :foreground ,base3))))
    ;; Spaceline
    `(spaceline-evil-normal ((,class (:background ,yel0))))
    `(spaceline-evil-insert ((,class (:background ,grn0))))
    `(spaceline-evil-visual ((,class (:background ,cya0))))
 
    ;; Spacemacs
-   `(spacemacs-normal-face ((,class (:background ,yel0))))
-   `(spacemacs-insert-face ((,class (:background ,grn0))))
-   `(spacemacs-visual-face ((,class (:background ,base0))))
+   `(spacemacs-normal-face ((,class (:background ,yel0 :foreground ,blu2))))
+   `(spacemacs-insert-face ((,class (:background ,grn0 :foreground ,blu2))))
+   `(spacemacs-visual-face ((,class (:background ,base0 :foreground ,blu2))))
 
    ;; Which-Key
    `(which-key-group-description-face ((,class (:background ,base1 :foreground ,pur2))))
