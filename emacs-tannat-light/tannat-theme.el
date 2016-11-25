@@ -176,14 +176,14 @@
    `(magit-popup-option-value ((,class (:background ,base1 :foreground ,grn2))))
 
    ;; Modeline
-   `(mode-line ((,class (:background ,pur0 :foreground ,base5))))
+   `(mode-line ((,class (:background ,base5 :foreground ,base0))))
    `(mode-line-highlight ((,class (:box nil))))
-   `(mode-line-inactive ((,class (:background ,base2 :foreground ,base3))))
+   `(mode-line-inactive ((,class (:background ,base1 :foreground ,base3))))
    ;; Powerline
-   `(powerline-active1 ((,class (:background ,blu0))))
-   `(powerline-active2 ((,class (:background ,cya0))))
-   `(powerline-inactive1 ((,class (:background ,base2 :foreground ,base3))))
-   `(powerline-inactive2 ((,class (:background ,base2 :foreground ,base3))))
+   `(powerline-active1 ((,class (:background ,blu3))))
+   `(powerline-active2 ((,class (:background ,pur3))))
+   `(powerline-inactive1 ((,class (:background ,base1 :foreground ,base3))))
+   `(powerline-inactive2 ((,class (:background ,base1 :foreground ,base3))))
    ;; Spaceline
    `(spaceline-evil-normal ((,class (:background ,yel0))))
    `(spaceline-evil-insert ((,class (:background ,grn0))))
