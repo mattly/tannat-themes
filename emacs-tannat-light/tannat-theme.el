@@ -53,8 +53,8 @@
    `(font-lock-comment-delimiter-face ((,class (:foreground ,base3 :slant italic))))
    `(font-lock-comment-face ((,class (:foreground ,base3 :slant italic))))
    `(font-lock-constant-face ((,class (:foreground ,base5 :background ,blu0))))
-   `(font-lock-doc-face ((,class (:foreground ,base5))))
-   `(font-lock-doc-string-face ((,class (:foreground ,base5))))
+   `(font-lock-doc-face ((,class (:foreground ,base5 :background ,grn0))))
+   `(font-lock-doc-string-face ((,class (:foreground ,base5 :background ,grn0))))
    `(font-lock-function-name-face ((,class (:foreground ,base5 :weight bold))))
    `(font-lock-keyword-face ((,class (:foreground ,base5 :background ,pur0))))
    `(font-lock-negation-char-face ((,class (:foreground ,base5))))
@@ -81,7 +81,7 @@
    `(link ((,class (:background ,blu0 :foreground ,base5))))
    `(link-visited ((,class (:background ,blu0 :foreground ,pur2))))
    `(linum ((,class (:foreground ,base3))))
-   `(linum-highlight-face ((,class (:background ,base1 :foreground ,base5 :weight bold))))
+   `(linum-highlight-face ((,class (:foreground ,base5 :weight bold))))
    `(region ((,class (:background ,yel0))))
    `(tooltip ((,class (:background ,basen))))
 
@@ -201,8 +201,8 @@
    `(spacemacs-visual-face ((,class (:background ,base0 :foreground ,blu2))))
 
    ;; Which-Key
-   `(which-key-group-description-face ((,class (:background ,base1 :foreground ,pur2))))
-   `(which-key-key-face ((,class (:background ,base1 :foreground ,blu1 :weight bold))))
+   `(which-key-group-description-face ((,class (:foreground ,pur2))))
+   `(which-key-key-face ((,class (:foreground ,blu1 :weight bold))))
 
    ;; js2
    `(js2-external-variable ((,class (:background ,red0))))
