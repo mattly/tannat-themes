@@ -33,6 +33,7 @@
        (grn1  "#79af0c")
        (grn2  "#3a7103")
        (grn3  "#1b5200")
+       (basen "#f2e9e6")
        (base0 "#e7dfdb")
        (base1 "#d3cdc1")
        (base2 "#9da287")
@@ -82,7 +83,7 @@
    `(linum ((,class (:foreground ,base3))))
    `(linum-highlight-face ((,class (:background ,base1 :foreground ,base5 :weight bold))))
    `(region ((,class (:background ,yel0))))
-   `(tooltip ((,class (:background ,base0))))
+   `(tooltip ((,class (:background ,basen))))
 
    ;; ahs
    `(ahs-definition-face ((,class (:background ,base1 :foreground ,base5))))
