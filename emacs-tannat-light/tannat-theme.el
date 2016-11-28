@@ -39,8 +39,8 @@
        (base2 "#9da287")
        (base3 "#6b857e")
        (base4 "#4e6777")
-       (base5 "#374767")
-       )
+       (base5 "#374767"))
+
   (custom-theme-set-faces
    'tannat
    `(default ((,class (:foreground ,base5 :background ,base0))))
@@ -82,6 +82,7 @@
    `(link-visited ((,class (:background ,blu0 :foreground ,pur2))))
    `(linum ((,class (:foreground ,base3))))
    `(linum-highlight-face ((,class (:foreground ,base5 :weight bold))))
+   `(match ((,class (:background ,yel0))))
    `(region ((,class (:background ,yel0))))
    `(tooltip ((,class (:background ,basen))))
 
@@ -155,6 +156,7 @@
    `(helm-ff-directory ((,class (:background ,pur0))))
    `(helm-ff-executable ((,class (:background ,cya0))))
    `(helm-ff-invalid-symlink ((,class (:background ,red1 :foreground ,base0))))
+   `(helm-ff-prefix ((,class (:background ,yel1))))
    `(helm-ff-symlink ((,class (:background ,yel0))))
    `(helm-grep-match ((,class (:background ,pur2 :foreground ,base0))))
    `(helm-match ((,class (:background ,pur2 :foreground ,base0))))
@@ -268,8 +270,8 @@
    `(term-color-magenta ((,class (:background ,pur1 :foreground ,pur1))))
    `(term-color-red ((,class (:background ,red1 :foreground ,red1))))
    `(term-color-yellow ((,class (:background ,yel1 :foreground ,yel1))))
-   `(term-color-white ((,class (:background ,base0 :foreground ,base0))))
-   ))
+   `(term-color-white ((,class (:background ,base0 :foreground ,base0))))))
+
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
