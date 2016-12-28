@@ -175,7 +175,7 @@
    `(magit-diff-removed ((,class (:background ,red1 :foreground ,base5))))
    `(magit-diff-removed-highlight ((,class (:background ,red0))))
 
-   `(magit-popup-key ((,class (:background ,base1 :foreground ,blu2))))
+   `(magit-popup-key ((,class (:inherit which-key-key-face))))
    `(magit-popup-option-value ((,class (:background ,base1 :foreground ,grn2))))
 
    ;; Modeline
