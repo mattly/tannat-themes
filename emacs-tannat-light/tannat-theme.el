@@ -9,6 +9,7 @@
   "A UI Theme for Emacs")
 (display-color-cells (selected-frame))
 (let* ((class '((class color) (min-colors 89)))
+       (yelA  "#faf2b8")
        (yel0  "#f9df90")
        (yel1  "#cf9512")
        (yel2  "#865b11")
@@ -105,9 +106,10 @@
    `(anzu-replace-to ((,class (:background ,base1 :foreground ,base5))))
 
    ;; company
+   `(company-echo-common ((,class (:background ,red2 :foreground ,base5))))
    `(company-preview ((,class (:background ,cya0))))
    `(company-preview-common ((,class (:background ,cya0))))
-   `(company-preview-search ((,class (:background ,cya0))))
+   `(company-preview-search ((,class (:background ,yelA :foreground ,base5))))
    `(company-scrollbar-bg ((,class (:background ,cya3))))
    `(company-scrollbar-fg ((,class (:background ,cya0))))
    `(company-template-field ((,class (:background ,base1))))
@@ -118,8 +120,9 @@
    `(company-tooltip-selection ((,class (:background ,cya0))))
 
    `(evil-ex-lazy-highlight ((,class (:background ,base0 :foreground ,base5))))
-   `(evil-ex-search ((,class (:background ,pur1 :foreground ,base0))))
-   `(isearch ((,class (:background ,pur1 :foreground ,base0))))
+   `(evil-ex-search ((,class (:background ,yelA :foreground ,base0))))
+   `(evil-search-highlight-persist-highlight-face ((,class (:background ,yelA :foreground ,base5))))
+   `(isearch ((,class (:background ,yel0 :foreground ,base0))))
    `(isearch-fail ((,class (:background ,red0 :foreground ,base5))))
 
    ;; Rainbow Delimiters
@@ -206,6 +209,14 @@
    `(which-key-group-description-face ((,class (:foreground ,pur2))))
    `(which-key-key-face ((,class (:foreground ,blu1 :weight bold))))
 
+   ;; Clojure
+   `(cider-fringe-good-face ((,class (:foreground ,grn1))))
+   `(cider-test-failure-face ((,class (:background ,red2 :foreground ,base0))))
+   `(cider-test-success-face ((,class (:background ,grn0))))
+
+   ;; Elixir
+   `(elixir-atom-face ((,class (:background ,blu0))))
+
    ;; js2
    `(js2-external-variable ((,class (:background ,red0))))
    `(js2-instance-member ((,class (:foreground ,base5))))
@@ -221,6 +232,7 @@
 
    ;; Markdown
    `(markdown-blockquote-face ((,class (:background ,grn0))))
+   `(markdown-footnote-face ((,class (:background ,grn0))))
    `(markdown-header-face ((,class (:background ,pur0))))
    `(markdown-header-delimiter-face ((,class (:background ,pur0))))
    `(markdown-header-rule-face ((,class (:background ,pur0))))
@@ -270,13 +282,24 @@
    `(term-color-magenta ((,class (:background ,pur1 :foreground ,pur1))))
    `(term-color-red ((,class (:background ,red1 :foreground ,red1))))
    `(term-color-yellow ((,class (:background ,yel1 :foreground ,yel1))))
-   `(term-color-white ((,class (:background ,base0 :foreground ,base0))))))
+   `(term-color-white ((,class (:background ,base0 :foreground ,base0))))
+
+   ;; Web-Mode
+   `(web-mode-doctype-face ((,class (:background ,blu0 :foreground ,base5))))
+   `(web-mode-html-attr-custom-face ((,class (:background ,blu0 :foreground ,base5))))
+   `(web-mode-html-attr-engine-face ((,class (:background ,blu0 :foreground ,base5))))
+   `(web-mode-html-attr-equal-face ((,class (:background ,blu0 :foreground ,base5))))
+   `(web-mode-html-attr-name-face ((,class (:background ,blu0 :foreground ,base5))))
+   `(web-mode-html-tag-custom-face ((,class (:background ,blu0 :foreground ,base5))))
+   `(web-mode-html-tag-face ((,class (:background ,blu0 :foreground ,base5))))
+   `(web-mode-symbol-face ((,class (:background ,blu0 :foreground ,base5))))
+   )
 
 
 ;;;###autoload
-(when (and (boundp 'custom-theme-load-path) load-file-name)
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+  (when (and (boundp 'custom-theme-load-path) load-file-name)
+    (add-to-list 'custom-theme-load-path
+                 (file-name-as-directory (file-name-directory load-file-name)))))
 
 (provide-theme 'tannat)
 ;;; tannat-theme.el ends here
